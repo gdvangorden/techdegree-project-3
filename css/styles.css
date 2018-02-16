@@ -1,0 +1,68 @@
+/*----------Style Defaults----------*/
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: medium;
+	color: #2d3945;
+	margin: 0 auto;
+	text-align: center;
+	background: #fff;
+}
+
+header {
+	padding: 10px 0;
+	color: #fff;
+	background: #2d3945;
+}
+
+h1, h2 {
+	font-weight: 800;
+	font-size: 1.2em;	
+}
+
+p {
+	font-weight: 300;
+}
+
+
+/*----------Main Content----------*/
+
+
+/*----------Footers----------*/
+footer {
+	font-style: italic;
+	color: #9da3a8;
+}
+
+
+
+
+/*----------Media Query----------*/
+@media screen and (min-width: 768px) {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
