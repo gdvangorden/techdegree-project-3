@@ -1,4 +1,8 @@
-/*----------Style Defaults----------*/
+/*----------Defaults----------*/
+* {
+	box-sizing:border-box;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: medium;
@@ -9,31 +13,114 @@ body {
 }
 
 header {
+	margin: 0 0 30px;
 	padding: 10px 0;
 	color: #fff;
 	background: #2d3945;
 }
 
-h1, h2 {
+h1, h2, legend {
 	font-weight: 800;
 	font-size: 1.2em;	
 }
 
-p {
-	font-weight: 300;
+h2 {
+	margin: 0;
 }
 
-
-/*----------Main Content----------*/
-
-
-/*----------Footers----------*/
-footer {
-	font-style: italic;
+p {
+	margin: 10px 0 0;
+	font-size: .9em;
+	font-weight: 300;
 	color: #9da3a8;
 }
 
+#intro {
+	padding: 0 0 35px;
+	width: 90%;
+	margin: 0 auto 3px;
+	border-bottom: 4px solid #2d3945;
+}
 
+
+/*----------Forms----------*/
+form {
+	width: 90%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+fieldset {
+	align-content: flex-start;
+	margin: 0 0 10px;
+	padding: 0;
+	border: none;
+}
+
+legend {
+	width: 100%;
+	border-top: 2px solid #2d3945;
+	padding: 25px 0;
+}
+
+label {
+	font-size: .9em;
+	width: 100%;
+}
+
+input, select, textarea {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: .9em;
+	width: 100%;
+	margin: 10px 0 20px;
+	padding: 15px 20px;
+	border: none;
+	background-color: #eff0f1;
+	color: #2d3945;
+	border-radius: 4px;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+::placeholder {
+	font-style: italic;
+	color: #9da3a8;
+	text-align: right;
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	text-align: center;
+	color: #fff;
+	background: #4ebbb5;
+	padding: 20px;
+	border-radius: 4px;
+	width: 100%;
+	border: none;
+	margin: 0 0 10px;
+}
+
+#zip {
+	width: 50%;
+}
+
+.radio {
+	display: inline;
+	width: inherit;
+	height: inherit;
+	margin: 10px 10px 10px 2px;
+}
+
+/*----------Footer----------*/
+footer {
+	font-style: italic;
+	margin: 0 0 30px;
+}
 
 
 /*----------Media Query----------*/
