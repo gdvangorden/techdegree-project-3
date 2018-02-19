@@ -13,10 +13,14 @@ body {
 }
 
 header {
-	margin: 0 0 30px;
+	margin: 0 0 45px;
 	padding: 10px 0;
 	color: #fff;
 	background: #2d3945;
+}
+
+section, form {
+	max-width: 650px;
 }
 
 h1, h2, legend {
@@ -36,11 +40,13 @@ p {
 }
 
 #intro {
-	padding: 0 0 35px;
 	width: 90%;
 	margin: 0 auto 3px;
-	border-bottom: 4px solid #2d3945;
 }
+
+	#intro p {
+		color: #2d3945;
+	}
 
 
 /*----------Forms----------*/
@@ -51,16 +57,19 @@ form {
 }
 
 fieldset {
-	align-content: flex-start;
-	margin: 0 0 10px;
-	padding: 0;
+	padding: 25px 25px 5px;
 	border: none;
 }
 
+	#contact_info {
+		background: #eff0f1;
+		border-radius: 8px;
+	}
+
 legend {
 	width: 100%;
-	border-top: 2px solid #2d3945;
-	padding: 25px 0;
+	padding: 42px 0 0;
+	border-bottom: 2px solid #2d3945;
 }
 
 label {
@@ -76,14 +85,22 @@ input, select, textarea {
 	margin: 10px 0 20px;
 	padding: 15px 20px;
 	border: none;
-	background-color: #eff0f1;
 	color: #2d3945;
 	border-radius: 4px;
+	outline: none;
 }
 
+	input, select {
+		background-color: #fff;
+	}
+	
+	textarea {
+		background-color: #eff0f1;
+	}
+
 select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
+	-webkit-appearance: menulist-button;
+	height: 46px;
 }
 
 ::placeholder {
@@ -109,12 +126,25 @@ button {
 	width: 50%;
 }
 
-.radio {
+.radio, .check {
 	display: inline;
 	width: inherit;
 	height: inherit;
 	margin: 10px 10px 10px 2px;
 }
+
+
+/*----------Focus States----------*/
+input, textarea {
+	transition: color .5s linear, background .5s linear;
+}
+
+input:focus, textarea:focus {
+	background: #4ebbb5;
+	color: #fff;
+	/*---box-shadow: 0 0 0 3px #4ebbb5;---*/
+}
+
 
 /*----------Footer----------*/
 footer {
@@ -125,8 +155,58 @@ footer {
 
 /*----------Media Query----------*/
 @media screen and (min-width: 768px) {
+	legend {
+		padding: 45px 0 5px;
+	}
+	
+	div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 20px 0;
+	}
+
+	div input, select {
+		width: 75%;
+		margin: auto 0;
+	}
+	
+	div label {
+		width: 25%;
+		margin: auto 0;
+	}
+	
+	#zip {
+		width: 25%;
+		margin-right: auto;
+	}
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
